@@ -14,11 +14,11 @@
 
 body {
   display: block;
-  background: #fff;
 }
 
 .main-header {
   height: 50px;
+  background-color: #fff;
 }
 
 .menu {
@@ -106,6 +106,12 @@ body {
   text-decoration: none;
 }
 
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #ece8e8;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -113,9 +119,10 @@ body {
   background: #fff;
   border: 1px solid #cbcdd2;
   border-radius: 16px;
-  width: 90%;
-  margin-top: 10px;
+  width: 84%;
+  margin-top: 15%;
   padding: 15px;
+  margin-left: 5%;
 }
 
 .card img {
@@ -374,6 +381,15 @@ image {
   align-items: center;
   color: #253858;
   gap: 1rem;
+  padding: 5%;
+}
+
+.list-language img {
+  width: 20%;
+}
+
+.language-heading i {
+  margin-left: 160px;
 }
 
 .frame-work {
