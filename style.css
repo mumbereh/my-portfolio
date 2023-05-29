@@ -10,12 +10,14 @@
   display: grid;
   width: fit-content;
   height: fit-content;
-  background: #e5e5e5;
+  background: #fff;
 }
 
 body {
-  width: 100%;
-  background: #f1f1f1;
+  display: block;
+  background: #fff;
+  width: auto;
+
 }
 
 .main-header {
@@ -26,7 +28,7 @@ body {
   position: absolute;
   left: 80%;
   top: 4%;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .main-header .menu {
@@ -36,23 +38,22 @@ body {
 }
 
 .part1 {
-  border: 1px solid rgb(202, 199, 199);
-  background: url(background.jpeg);
+  background: url(background.jpeg) gainsboro;
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   margin: 10px;
-  margin-bottom: 5%;
   align-items: center;
 }
 
 .head-name {
   font-family: 'Poppins', sans-serif;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
-  margin: 40% 10px 17px;
+   margin-top:19%; 
+   margin-left: -15%;
   line-height: 50px;
   right: 10px;
   display: flex;
@@ -74,7 +75,6 @@ body {
 }
 
 .social-media ul {
-  color: black;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -88,7 +88,8 @@ body {
   padding: 0 12px;
   margin-top: 5%;
   margin-bottom: 10%;
-  color: #120707;
+  color: #000;
+  margin-left: -5%;
 }
 
 .logo {
