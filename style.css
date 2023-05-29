@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+body {
+  display: block;
+  background: #fff;
+}
+
+.main-header {
+  height: 50px;
+}
+
+.menu {
+  position: absolute;
+  left: 80%;
+  top: 4%;
+  font-size: 30px;
+}
+
+.main-header .menu {
+  line-height: 4;
+  display: flex;
+}
+
+.part1 {
+  background: url(background.jpeg) gainsboro;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 19%;
+  margin-left: -15%;
+  line-height: 50px;
+  right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head-para {
+  font-family: 'Poppins', sans-serif;
+  left: 20px;
+  right: 10px;
+  margin: 10px 17px;
+}
+
+.sub-head {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: -48%;
+  color: #7f8cff;
+}
+
+.social-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 20px;
+  padding: 0 10px;
+  margin-left: -30%;
+}
+
+.social-media ul li {
+  text-decoration: none;
+  padding: 0 12px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: #505f79;
+}
+
+.social-media ul li a {
+  color: #505f79;
+  padding-right: 2px;
+  margin-left: 10%;
+}
+
+.social-media .img {
+  color: #000;
+  margin-top: 10%;
+}
+
+.logo {
+  position: absolute;
+  margin: 10px;
+  top: 1%;
+  font-size: 24px;
+  text-decoration: none;
+}
