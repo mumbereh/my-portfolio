@@ -29,7 +29,6 @@ body {
 }
 
 .main-header .menu {
-  left: 30;
   line-height: 4;
   display: flex;
 }
@@ -41,8 +40,8 @@ body {
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  margin: 10px;
   align-items: center;
+  margin: 10px;
 }
 
 .head-name {
@@ -54,6 +53,7 @@ body {
   line-height: 50px;
   right: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .head-para {
