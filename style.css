@@ -79,22 +79,21 @@ body {
   margin-left: -30%;
 }
 
-.social-media ul li{
+.social-media ul li {
   text-decoration: none;
   padding: 0 12px;
   margin-top: 10%;
   margin-bottom: 10%;
-  color: #505F79;
+  color: #505f79;
 }
 
-.social-media ul li a{
-  color: #505F79;
+.social-media ul li a {
+  color: #505f79;
   padding-right: 2px;
   margin-left: 10%;
-
 }
 
-.social-media .img{
+.social-media .img {
   color: #000;
   margin-top: 10%;
 }
