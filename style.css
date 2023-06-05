@@ -197,7 +197,7 @@ li {
 
 .trainning {
   padding: 20px;
-  float: right;
+  float: flex;
   margin-bottom: 5%;
   list-style: none;
   flex-wrap: wrap;
@@ -211,7 +211,7 @@ li {
 }
 
 .other-skills {
-  float: left;
+  float: flex;
   flex-direction: row;
   align-items: center;
   background: #ebebff;
