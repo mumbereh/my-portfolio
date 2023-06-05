@@ -197,14 +197,14 @@ image {
 }
 
 .trainning {
-  display: flex;
+  float: right;
   margin-bottom: 5%;
   list-style: none;
   flex-wrap: wrap;
 }
 
 .other-skills {
-  display: flex;
+  float: left;
   flex-direction: row;
   align-items: center;
   background: #ebebff;
