@@ -442,14 +442,14 @@ image {
   color: #868a8f;
   width: 87%;
 }
+
 .form {
   background: #6070ff;
   background-image: url(contactbg.png);
- background-repeat: no-repeat;
- background-size: 100%  70%;
+  background-repeat: no-repeat;
+  background-size: 100%  70%;
   border-top-left-radius: 15%;
   margin-bottom: -3%;
-
 }
 
 .form-body {
