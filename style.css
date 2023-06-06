@@ -422,11 +422,10 @@ li {
   width: 87%;
 }
 
-#social-media{
+#social-media {
   float: left;
   margin-left: -45px;
   margin-top: -2%;
- 
 }
 
 .form {
@@ -580,7 +579,7 @@ textarea {
 
   .ruby {
     display: inline;
-    float:left ;
+    float: left;
     align-items: center;
     background: #ebebff;
     border-radius: 8px;
@@ -592,13 +591,7 @@ textarea {
     padding: 8px 12px;
     margin-right: 10px;
     margin-top: -7px;
-    margin-left:0.5%;
-  
-  }
-
-  #social-media{
-    float: left;
-    padding-left: 0xp;
+    margin-left: 0.5%;
   }
 
   .head-name {
@@ -703,7 +696,7 @@ textarea {
   }
 
   #social-media {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 20px;
   }
 
