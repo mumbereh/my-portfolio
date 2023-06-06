@@ -303,9 +303,9 @@ li {
   border: 1.5px solid #396df2;
   width: fit-content;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 39px;
   margin-bottom: 5%;
-  margin-left: 10px;
+  margin-left: -163px;
 }
 
 .resume-btn:hover {
@@ -420,6 +420,13 @@ li {
   margin: 18px 0;
   color: #868a8f;
   width: 87%;
+}
+
+#social-media{
+  float: left;
+  margin-left: -45px;
+  margin-top: -2%;
+ 
 }
 
 .form {
@@ -568,12 +575,12 @@ textarea {
     background: url(5.png);
     background-position: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
   }
 
   .ruby {
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    float:left ;
     align-items: center;
     background: #ebebff;
     border-radius: 8px;
@@ -584,8 +591,14 @@ textarea {
     font-family: 'Poppins', sans-serif;
     padding: 8px 12px;
     margin-right: 10px;
-    padding-left: 0;
-    margin-left: 0;
+    margin-top: -7px;
+    margin-left:0.5%;
+  
+  }
+
+  #social-media{
+    float: left;
+    padding-left: 0xp;
   }
 
   .head-name {
@@ -609,6 +622,7 @@ textarea {
   }
 
   .social-media ul {
+    float: left;
     margin-left: 241px;
     margin-top: 30px;
   }
@@ -684,12 +698,13 @@ textarea {
   }
 
   .resume-btn {
-    margin-left: 60px;
+    margin-left: -25%;
+    margin-top: 67px;
   }
 
   #social-media {
-    margin-left: 50px;
-    margin-top: 25px;
+    margin-left: 0px;
+    margin-top: 20px;
   }
 
   .list-language {
