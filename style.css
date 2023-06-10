@@ -639,14 +639,14 @@ textarea {
   .pic {
     order: 2;
   }
-
+/* 
   #anim {
     transition: scale 1s ease-in-out;
   }
 
   #anim:hover {
     scale: 1.05;
-  }
+  } */
 
   .title {
     height: 46px;
