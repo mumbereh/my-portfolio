@@ -640,17 +640,18 @@ textarea {
     order: 2;
   }
 
-#anim {
+  #anim {
     transition: scale 1s ease-in-out;
   }
 
   #anim:hover {
     scale: 1.05;
   }
+
   .title {
     height: 46px;
     width: 496px;
-    padding-left: -100px;
+    padding-left: -101px;
   }
 
   .field {
@@ -829,6 +830,14 @@ textarea {
 
   .ul_form textarea {
     padding-left: 20px;
+  }
+
+  .card-btn {
+    transition: scale 1s ease-in-out;
+  }
+
+  .card-btn:hover {
+    scale: 1.05;
   }
 
   .form-btn {
