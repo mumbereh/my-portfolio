@@ -19,7 +19,7 @@ jobs:
       - name: Lighthouse Report
         run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
   webhint:
-    name: Webhint
+  
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
