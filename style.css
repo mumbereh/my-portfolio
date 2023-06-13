@@ -32,7 +32,7 @@ body {
 }
 
 .part1 {
-  background: url(background.jpeg);
+  background: url(images/background.jpeg);
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -432,7 +432,7 @@ li {
   width: 100%;
   top: 200px;
   background: #6070ff;
-  background-image: url(contact-bg.png);
+  background-image: url(images/contact-bg.png);
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -571,7 +571,7 @@ textarea {
   }
 
   .part1 {
-    background: url(5.png);
+    background: url(images/5.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -640,13 +640,14 @@ textarea {
     order: 2;
   }
 
-#anim {
+  #anim {
     transition: scale 1s ease-in-out;
   }
 
   #anim:hover {
     scale: 1.05;
   }
+
   .title {
     height: 46px;
     width: 496px;
@@ -748,7 +749,7 @@ textarea {
     width: 100%;
     top: 200px;
     background: #6070ff;
-    background-image: url(contact-bg.png);
+    background-image: url(images/contact-bg.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-size: 100%;
