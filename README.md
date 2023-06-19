@@ -56,8 +56,6 @@ This webpage is about my Portfolio.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link]( https://mumbereh.github.io/my-portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
