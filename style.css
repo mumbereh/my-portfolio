@@ -36,6 +36,16 @@ header {
   font-weight: bold;
 }
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-img {
+  display: block;
+  margin: 5px 0;
+}
+
 .cover {
   display: flex;
   flex-direction: column;
@@ -55,14 +65,16 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 25%;
 }
 
 li {
+  font-family: 'Poppins', sans-serif;
   list-style: none;
   display: inline;
   left: 2.4%;
   right: 88.27%;
-  top: 77.81%;
+  top: 90.81%;
   bottom: 18.88%;
   margin-left: 15px;
 }
@@ -101,14 +113,15 @@ nav a {
 
 .close-button {
   position: absolute;
-  top: 0;
+  top: 4%;
   right: 8rem;
-  font-size: 2.8rem;
+  font-size: 2rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
   margin-left: 81.9%;
   color: #fff;
+  width: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -142,7 +155,6 @@ nav a {
 
   nav ul {
     flex-direction: column;
-    align-items: center;
   }
 
   nav li {
