@@ -102,7 +102,6 @@ for (let i = 0; i < project.length; i += 1) {
   proContainer.appendChild(card);
 }
 
-// Popup Modal
 const popupModal = document.querySelector('#popup-modal');
 const cardBtn = document.querySelectorAll('.card-btn');
 
