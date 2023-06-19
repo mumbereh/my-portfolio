@@ -22,11 +22,6 @@ body {
   margin-right: 24px;
 }
 
-/* .logo {
-margin-right: auto;
-margin-left: 24px;
-} */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -41,15 +36,7 @@ header {
   font-weight: bold;
 }
 
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
 
-.menu-img {
-  display: block;
-  margin: 5px 0;
-}
 
 .cover {
   display: flex;
