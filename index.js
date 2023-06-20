@@ -156,3 +156,37 @@ cardBtn.forEach((btn, btnIndex) => {
     });
   });
 });
+
+function validateEmail() {
+  const emailInput = document.getElementById('email');
+  const email = emailInput.value.trim();
+  const errorMessage = document.getElementById('email-error');
+
+  if (email === '') {
+    errorMessage.textContent = 'Email is required';
+    errorMessage.style.display = 'block';
+    return false;
+  } if (email !== email.toLowerCase()) {
+    errorMessage.textContent = 'Email must contain only lowercase letters';
+    errorMessage.style.display = 'block';
+    return false;
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    errorMessage.textContent = 'Invalid email address';
+    errorMessage.style.display = 'block';
+    return false;
+  }
+  errorMessage.textContent = '';
+  errorMessage.style.display = 'none';
+  return true;
+}
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  if (validateEmail()) {
+    document.getElementById('contact-form').submit();
+  }
+}
+
+document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
