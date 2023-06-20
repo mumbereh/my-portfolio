@@ -106,36 +106,34 @@
                 </li>
             </ul>
         </div>
-            </section>
-            <section class="form">
-                <form action="https://formspree.io/f/mnqygqol" method="post">
+        <section class="form">
+            <form id="contact-form" action="https://formspree.io/f/mnqygqol" method="post">
                 <div class="form-header">
-                    Contact me
-                <p>
-                    If you have an application you are interested in developing, 
-                    a feature that you need built or a project that needs coding. 
-                    I’d love to help with it!
-                </p>
-            </div>
-            <div id="contacts-form"></div>
+                    <p>Contact me</p>
+                    <p>If you have an application you are interested in developing,
+                        a feature that you need built, or a project that needs coding,
+                        I’d love to help with it!</p>
+                </div>
                 <div class="form-body">
                     <ul class="ul_form">
                         <li>
-                            <input type="text" maxlength="30" name="name" placeholder="enter your name......" required>
+                            <input type="text" id="name" maxlength="30" name="name" placeholder="Enter your name..." required>
                         </li>
                         <li>
-                            <input type="text" name="email" placeholder="enter your email......"required>
-                           
+                            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                            <span id="email-error" class="error-message">Invalid email address.</span>
                         </li>
                         <li>
-                            <textarea name="message" maxlength="500" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                            <textarea name="message" maxlength="500" id="msg" cols="30" rows="10"
+                                placeholder="Write your message here..."></textarea>
                         </li>
-                        <button type="submit" class="form-btn">Get in touch</button>
+                        <li>
+                            <button type="submit" class="form-btn">Get in touch</button>
+                        </li>
                     </ul>
                 </div>
             </form>
-            </section>
-
+        </section>
 </div>
 <script src="index.js"></script>
   </body>
