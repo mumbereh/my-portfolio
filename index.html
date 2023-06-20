@@ -121,14 +121,15 @@
                         </li>
                         <li>
                             <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-                            <span id="email-error" class="error-message">Invalid email address.</span>
+                            <span id="email-error" class="error-message">Invalid email address.</span> 
                         </li>
                         <li>
                             <textarea name="message" maxlength="500" id="msg" cols="30" rows="10"
                                 placeholder="Write your message here..."></textarea>
                         </li>
                         <li>
-                            <button type="submit" class="form-btn">Get in touch</button>
+                            <button type="submit" class="form-btn" formaction="javascript:submitForm()">Get in touch</button>
+
                         </li>
                     </ul>
                 </div>

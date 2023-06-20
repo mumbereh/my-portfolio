@@ -156,31 +156,32 @@ cardBtn.forEach((btn, btnIndex) => {
     });
   });
 });
+
 function validateEmail() {
-  const emailInput = document.getElementById("email");
+  const emailInput = document.getElementById('email');
   const email = emailInput.value.trim();
+  const errorMessage = document.getElementById('email-error');
 
-  emailInput.value = email;
-
-  const errorMessage = document.getElementById("email-error");
-  const uppercaseRegex = /[A-Z]/;
-
-  if (uppercaseRegex.test(email) || email !== emailInput.value) {
-      errorMessage.textContent = "Email must not contain capital letters";
-      errorMessage.style.display = "block";
-      return false;
-  } else {
-      errorMessage.textContent = "";
-      errorMessage.style.display = "none";
-      return true;
+  if (email === '') {
+    errorMessage.textContent = 'Email is required';
+    errorMessage.style.display = 'block';
+    return false;
+  } if (email !== email.toLowerCase()) {
+    errorMessage.textContent = 'Email must contain only lowercase letters';
+    errorMessage.style.display = 'block';
+    return false;
   }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    errorMessage.textContent = 'Invalid email address';
+    errorMessage.style.display = 'block';
+    return false;
+  }
+  errorMessage.textContent = '';
+  errorMessage.style.display = 'none';
+  return true;
 }
 
-const form = document.getElementById("contact-form");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  if (form.checkValidity() && validateEmail()) {
-      saveData();
-      form.reset();
-  }
-});
+if (validateEmail()) {
+  document.getElementById('contact-form').submit();
+}

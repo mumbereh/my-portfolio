@@ -879,14 +879,13 @@ textarea {
   }
 
   .form {
-    width: 100%;
     top: 200px;
     background: #6070ff;
     background-image: url(images/contact-bg.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 846px;
+    width: 200%;
     border-top-left-radius: 15%;
     margin-top: 10%;
   }
@@ -896,6 +895,15 @@ textarea {
     justify-content: center;
     margin: 1px;
   }
+
+  .error-message {
+    display: none;
+    color: red;
+  }
+
+  /* input:invalid + .error-message {
+    display: block;
+} */
 
   .ul_form {
     display: flex;
