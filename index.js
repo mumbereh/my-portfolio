@@ -190,3 +190,30 @@ function handleFormSubmit(event) {
 }
 
 document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+
+function saveData() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('msg').value;
+
+  const formData = {
+    name,
+    email,
+    message,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://formspree.io/f/mnqygqol');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify(formData));
+}
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (form.checkValidity() && validateEmail()) {
+    saveData();
+    form.reset();
+  }
+});
