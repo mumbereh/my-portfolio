@@ -182,6 +182,11 @@ function validateEmail() {
   return true;
 }
 
-if (validateEmail()) {
-  document.getElementById('contact-form').submit();
+function handleFormSubmit(event) {
+  event.preventDefault();
+  if (validateEmail()) {
+    document.getElementById('contact-form').submit();
+  }
 }
+
+document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
