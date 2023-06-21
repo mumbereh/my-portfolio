@@ -209,4 +209,11 @@ function saveData() {
   xhr.send(JSON.stringify(formData));
 }
 
-
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (form.checkValidity() && validateEmail()) {
+    saveData();
+    form.reset();
+  }
+});
