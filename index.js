@@ -7,7 +7,8 @@ menuToggle.addEventListener('click', () => {
     nav.classList.remove('show');
     closeBtn.style.display = 'none';
     menuToggle.style.display = 'block';
-  } else {
+  } 
+  else {
     nav.classList.add('show');
     menuToggle.style.display = 'none';
     closeBtn.style.display = 'block';
@@ -240,6 +241,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-form.addEventListener('input', () => {
-  updateLocalStorage();
-});
