@@ -190,3 +190,56 @@ function handleFormSubmit(event) {
 }
 
 document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+
+function saveData() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('msg').value;
+
+  const formData = {
+    name,
+    email,
+    message,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://formspree.io/f/mnqygqol');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify(formData));
+}
+
+function updateLocalStorage() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('msg').value;
+
+  const formData = {
+    name,
+    email,
+    message,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (form.checkValidity() && validateEmail()) {
+    saveData();
+    form.reset();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const formData = localStorage.getItem('formData');
+  if (formData) {
+    const { name, email, message } = JSON.parse(formData);
+    document.getElementById('name').value = name;
+    document.getElementById('email').value = email;
+    document.getElementById('msg').value = message;
+  }
+});
+
+form.addEventListener('input', () => {
+  updateLocalStorage();
+});
